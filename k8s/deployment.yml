@@ -15,6 +15,7 @@ spec:
       containers:
         - name: student-k8s-demo
           image: krithika2013/student-k8s-demo:f531ad9b2d3b5243fc404c00c396b6b09c2dab1d
+          ports:
             - containerPort: 5000
           readinessProbe:
             httpGet:
